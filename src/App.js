@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Navbar from './components/Navbar';
+import Gallery from './components/Gallery';
+import catData from './data.js'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 
 function App() {
+  const newcatData = catData.map((data)=>{
+    return (
+      <Gallery 
+        key = { data.id }
+        catImage = { data.catImage }
+        title = { data.title }
+        phone = { data.phone }
+        email = { data.email }
+    />
+    )
+
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='container'>
+        <Navbar/>
+      <div className='contacts'>
+        <Routes>
+          <Route path='/gallery' 
+          element= { newcatData } >
+        </Route>
+        </Routes>
+      </div>
+      </div>
+    </Router>
   );
 }
 

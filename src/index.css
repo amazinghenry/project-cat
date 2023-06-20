@@ -1,13 +1,82 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contacts {
+  background-color: bisque;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cat-title {
+  font-size: 1rem;
+  margin-bottom: 20px;
+
+}
+
+.cats {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.call-icon,
+.mail-icon {
+  width: 0.6rem;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+
+.phone-text,
+.mail-text {
+  font-size: 0.8rem ;
+  margin-left: 5px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.main-logo {
+  margin-right: auto;
+  text-decoration: none;
+  color: brown;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.link-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-item {
+  list-style-type: none;
+}
+
+.link-link {
+  text-decoration: none;
+  margin: 0 10px;
 }
