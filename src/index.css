@@ -5,78 +5,36 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.contacts {
-  background-color: bisque;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.contact-card {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  width: 200px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.cat-title {
-  font-size: 1rem;
-  margin-bottom: 20px;
-
-}
-
-.cats {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.call-icon,
-.mail-icon {
-  width: 0.6rem;
-}
-
-.info-group {
-  display: flex;
-  align-items: center;
-  margin: 5px 0;
-}
-
-
-.phone-text,
-.mail-text {
-  font-size: 0.8rem ;
-  margin-left: 5px;
-}
-
-
 nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 30px 10px;
+  background-color: rgb(42, 134, 102);
 }
 
 .main-logo {
   margin-right: auto;
+  color: #fff;
+}
+
+.nav-link {
+  margin: 0 8px;
   text-decoration: none;
-  color: brown;
-  font-size: 1.2rem;
-  font-weight: 600;
+  color: #fff;
 }
 
-.link-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header {
+  padding: 30px 10px;
+  text-align: center;
+  background-color:tomato;
 }
 
-.link-item {
-  list-style-type: none;
+.header-title {
+  color: #fff;
+  margin-bottom:10px;
 }
 
-.link-link {
-  text-decoration: none;
-  margin: 0 10px;
+.header-text {
+  color: #fff;
 }

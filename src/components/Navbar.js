@@ -1,15 +1,13 @@
-import '../index.css'
-
 const Navbar = () => {
     return ( 
         <nav>
-            <a href='/' className='main-logo'>Cat Library</a>
-            <ul className='link-group'>
-                <li className='link-item'> <a className='link-link' href='/'>About</a></li>
-                <li  className='link-item'><a className='link-link' href='/gallery'>Gallery</a></li>
-                <li  className='link-item'><a className='link-link' href='/'>Contact</a></li>
-
-            </ul>
+            <h1 className="main-logo">AmazingShop</h1>
+            <div className="nav-group">
+                <a href="/" className="nav-link">Home</a>
+                <a href="/" className="nav-link">About</a>
+                <a href="/" className="nav-link">Contact</a>
+                <a href="/" className="nav-link">Gallery</a>
+            </div>
         </nav>
      );
 }
